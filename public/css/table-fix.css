@@ -1,0 +1,54 @@
+/* Perbaikan khusus untuk tampilan tabel */
+
+/* Memperbaiki tampilan tabel pada halaman daftar tamu */
+.min-w-full {
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* Memperbaiki tampilan header tabel */
+thead tr {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}  
+
+/* Memperbaiki tampilan sel tabel */
+td, th {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Memperbaiki tampilan pada perangkat mobile */
+@media (max-width: 768px) {
+  .overflow-x-auto {
+    max-width: 100vw;
+    padding: 0;
+  }
+  
+  td, th {
+    padding: 0.5rem 0.25rem !important;
+    font-size: 0.75rem !important;
+  }
+  
+  .card-body {
+    padding: 0.5rem !important;
+  }
+}
+
+/* Memperbaiki tampilan badge/label */
+.inline-flex {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Memperbaiki tampilan tombol aksi */
+.py-1 {
+  line-height: 1.5;
+}
+
+/* Memperbaiki tampilan card */
+.card {
+  overflow: hidden;
+}

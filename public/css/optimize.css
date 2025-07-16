@@ -1,0 +1,47 @@
+/* Optimasi CSS untuk meningkatkan performa */
+
+/* Reset dan optimasi dasar */
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optimasi tabel */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th, table td {
+  border-color: #e5e7eb;
+}
+
+/* Optimasi font dan teks */
+body {
+  text-rendering: optimizeSpeed;
+}
+
+/* Optimasi animasi */
+.sidebar, .main-content, .modal {
+  will-change: transform;
+}
+
+/* Optimasi media queries */
+@media screen and (max-width: 768px) {
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Optimasi rendering */
+* {
+  backface-visibility: hidden;
+}
+
+/* Optimasi untuk perangkat dengan DPI tinggi */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
